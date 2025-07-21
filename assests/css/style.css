@@ -41,3 +41,13 @@
 .bg-color {
     background-color: #767676;
 }
+
+.blog-img{
+    background-size: cover;
+}
+
+.page-link.no-border {
+    border: none !important;
+    box-shadow: none !important;
+    color: grey;
+}
