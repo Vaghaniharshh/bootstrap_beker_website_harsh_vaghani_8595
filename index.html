@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <style>
@@ -31,7 +34,7 @@
     <!-- Header start -->
     <!-- Navbar Start -->
     <div class="bg-image">
-        <header>
+        <header class="container">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center py-4">
                     <div class="nav-logo px-4">
@@ -50,6 +53,18 @@
                                     href="">Contact</a></li>
                         </ul>
                     </nav>
+
+                    <!-- Menu Icon -->
+
+                    <div class="d-lg-none">
+                        <a data-bs-toggle="offcanvas" href="#mobileMenu" role="button" aria-controls="mobileMenu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
                 <!-- Navbar Ends -->
 
@@ -76,78 +91,111 @@
 
         </header>
     </div>
+
+    <!-- Offcanvas  -->
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="bg-light">
+            <div class="offcanvas-header">
+                <img src="./assests/images/div.logo.png" alt="Logo" height="30">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav>
+                    <ul class="list-unstyled d-flex flex-column gap-3">
+                        <li><a href="#" class="text-dark text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Service</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Portfolio</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">News</a></li>
+                        <li><a href="#" class="btn btn-outline-dark rounded-pill px-4 py-1">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
     <!-- Header Ends -->
 
     <!-- First Section Starts -->
-    <div class="row align-items-center vh-100">
-        <div class="col">
-            <div class="only-img">
-                <img src="./assests/images/5b08acbf5342a5c164c69339a33832166ba60269.jpg" alt="">
+    <div class="container">
+
+        <div class="row align-items-center vh-100">
+            <div class="col only-img col-12 col-lg-6 col-md-6 mb-4 mb-lg-0 text-center">
+
+                <img src="./assests/images/5b08acbf5342a5c164c69339a33832166ba60269.jpg "
+                    class="img-fluid w-100 h-100 col-12 col" alt="">
+
             </div>
-        </div>
-        <div class="col">
-            <h2 class="fw-bold mb-3"> We Are Experts In Our Field.</h2>
-            <p class="text-secondary fw-bold">
-                My digital company of professionals has been developing
-                products for 15 years
-            </p>
-            <p class="text-secondary mb-4">
-                Ultrices sagittis feugiat pulvinar faucibus neque pretium mentum.
-                Convallis egestas rhoncus iaculis laoreet feugiat orci amet turpis
-                sagittis.Ultrices sagittis feugiat pulvinar faucibus neque pretium
-                elementum. Convallis egestas rhoncus iaculis laoreet feugiat orci amet
-                turpis sagittis.
-            </p>
-            <a class="custom-btn text-decoration-none text-black fw-semibold border border-secondary rounded-pill px-4 py-2"
-                href="">Download CV</a>
+            <div class="col-12 col-lg-6">
+                <h2 class="fw-bold mb-3"> We Are Experts In Our Field.</h2>
+                <p class="text-secondary fw-bold">
+                    My digital company of professionals has been developing
+                    products for 15 years
+                </p>
+                <p class="text-secondary mb-4">
+                    Ultrices sagittis feugiat pulvinar faucibus neque pretium mentum.
+                    Convallis egestas rhoncus iaculis laoreet feugiat orci amet turpis
+                    sagittis.Ultrices sagittis feugiat pulvinar faucibus neque pretium
+                    elementum. Convallis egestas rhoncus iaculis laoreet feugiat orci amet
+                    turpis sagittis.
+                </p>
+                <a class="custom-btn text-decoration-none text-black fw-semibold border border-secondary rounded-pill px-4 py-2"
+                    href="">Download CV</a>
+            </div>
         </div>
     </div>
 
     <!-- Service Section -->
+    <section class="py-5">
 
-    <div class="bg-color">
-        <div class="container text-center py-5">
+        <div class="bg-color">
+            <div class="container text-center py-5">
 
-            <h2 class="d-flex justify-content-center align-items-center">My Awesome Services</h2>
+                <h2 class="d-flex justify-content-center align-items-center">My Awesome Services</h2>
 
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <p class="text mt-3 text-secondary">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                    </p>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <p class="text mt-3 text-secondary text-muted w-50 mx-auto mb-5">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                            nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                        </p>
+                    </div>
                 </div>
+
+
+
+                <div class="row p-3">
+                    <div class="col-6 col-md-3">
+                        <div class="bg-white p-4 text-center h-100">
+                            <img src="./assests/images/SVG2.png" alt="UI/UX Design" class="mb-3 img-fluid">
+                            <h6>UI/UX Design</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="bg-white p-4 text-center h-100">
+                            <img src="./assests/images/Vector.png" alt="Graphic Design" class="mb-3 img-fluid">
+                            <h6>Graphic Design</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="bg-white p-4 text-center h-100">
+                            <img src="./assests/images/SVG.png" alt="Brand Identity" class="mb-3 img-fluid">
+                            <h6>Brand Identity</h6>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="bg-white p-4 text-center h-100">
+                            <img src="./assests/images/SVG3.png" alt="Brand Identity" class="mb-3 img-fluid">
+                            <h6>Brand Identity</h6>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-
-            <div class="row p-3">
-                <div class="col-6 col-md-3">
-                    <div class="bg-white p-4">
-                        <img src="./assests/images/SVG2.png" alt="" class="mb-3 ">
-                        <h6>UI/UX Design</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="bg-white p-4">
-                        <img src="./assests/images/Vector.png" alt="" class="mb-3 ">
-                        <h6>Graphic Design</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="bg-white p-4">
-                        <img src="./assests/images/SVG.png" alt="" class="mb-3 ">
-                        <h6>Brand Identity</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="bg-white p-4">
-                        <img src="./assests/images/SVG3.png" alt="" class="mb-3 ">
-                        <h6>Brand Identity</h6>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
+    </section>
 
     <div>
         <div class="container py-5">
@@ -291,25 +339,29 @@
                 <div class="col-md-6">
                     <p class="text-secondary fs-5 fw-bold m-0">I'm always open to discussing product</p>
                     <p class="text-black fs-5 fw-bold">design work or partnerships.</p>
-                    <form class="row g-3">
-                        <div class="col-12">
-                            <label for="name" class="form-label">Name*</label>
-                            <input type="text" id="name" class="form-control border-1 border-secondary border-bootom">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control border-0 border-bottom rounded-0 bg-transparent"
+                                placeholder="Name*" required />
                         </div>
-                        <div class="col-md-6">
-                            <label for="email" class="form-label">Email*</label>
-                            <input type="email" id="email" class="form-control border-1 border-secondary">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="email" class="form-control border-0 border-bottom rounded-0 bg-transparent"
+                                    placeholder="Email*" required />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control border-0 border-bottom rounded-0 bg-transparent"
+                                    placeholder="Subject*" required />
+                            </div>
+                            <!-- <div class="mb-3">
+                                <input type="text" class="form-control border-0 border-bottom rounded-0 bg-transparent"
+                                    required />
+                            </div> -->
                         </div>
-                        <div class="col-md-6">
-                            <label for="subject" class="form-label">Subject*</label>
-                            <input type="text" id="subject" class="form-control border-1 border-secondary">
-                        </div>
-                        <div class="col-12">
-                            <label for="message" class="form-label pt-3">Message*</label>
-                            <textarea id="message" rows="2" class="form-control border-1 border-secondary"></textarea>
-                        </div>
-                        <div class="col-12 pt-2">
-                            <button type="submit" class="btn btn-light border border-black px-4 py-2 rounded-3">Submit</button>
+                        <div class="mt-4">
+                            <button type="submit" class="btn btn-outline-dark px-4">
+                                Submit
+                            </button>
                         </div>
                     </form>
 

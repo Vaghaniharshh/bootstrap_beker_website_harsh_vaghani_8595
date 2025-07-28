@@ -4,6 +4,8 @@
     height: 120vh;
     background-size: cover;
     background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .nav-logo {
@@ -25,10 +27,10 @@
     margin-top: 50px;
 }
 
-.only-img img {
+/* .only-img img {
     height: 100vh;
     width: 700px;
-}
+} */
 
 /* .col h2 {
     width: 250px;
@@ -37,10 +39,6 @@
 /* .col p {
     width: 450px;
 } */
-
-.bg-color {
-    background-color: #767676;
-}
 
 .blog-img{
     background-size: cover;
