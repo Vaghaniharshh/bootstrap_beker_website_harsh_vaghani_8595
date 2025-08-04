@@ -1,10 +1,14 @@
-.bg-image {
+/* .bg-image {
     background-image: url("../images/background-image.jpg");
     background-size: cover;
     background-position: center;   
     background-repeat: no-repeat;
-}
+} */
 
+.bg-image {
+    background: linear-gradient(to left, #d4e7eb, #e8f2f4, #fff, #fff);
+    width: 100%;
+}
 .nav-logo {
     margin-left: 40px;
 }
